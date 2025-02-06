@@ -1,0 +1,16 @@
+---
+import { SITE_LOGO, SITE_TITLE } from "../config";
+import Menu from "./menus.astro";
+---
+
+<header id="site-header">
+  <nav>
+    <a href="/" class="logo">
+      <div style="display: flex; align-items: center;">
+        <img src={SITE_LOGO} alt="journal" width="0.5rem" height="0.5rem" />
+        <!-- <span>{SITE_TITLE}</span> -->
+      </div>
+    </a>
+    <Menu />
+  </nav>
+</header>
